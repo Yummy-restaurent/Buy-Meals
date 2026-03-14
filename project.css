@@ -55,17 +55,6 @@ nav ul li a {
     width: 73px;
 }
 
-.rate p {
-    position: absolute;
-    top: 50%;
-    left: 93%;
-    transform: translate(-66%, -90%);
-    margin: 0;
-    font-size: smaller;
-    color: goldenrod;
-    cursor: pointer;
-}
-
 
 /* Sections */
 
