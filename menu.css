@@ -20,7 +20,6 @@ nav {
     width: 100%;
     height: 70px;
     background-color: #111;
-    color: white;
     display: flex;
     justify-content: space-between;
     padding: 20px 60px;
@@ -31,8 +30,6 @@ nav ul {
     display: flex;
     list-style-type: none;
     gap: 25px;
-    justify-content: center;
-    align-items: center;
 }
 
 nav ul li a {
@@ -42,9 +39,14 @@ nav ul li a {
 }
 
 .rate img {
-    margin-left: auto;
+    display: flex;
     height: 69px;
     width: 73px;
+    transition: transform 0.5s;
+}
+
+.rate img:hover {
+    transform: scale(1.08);
 }
 
 .navigation li a:hover:not(.active) {
@@ -86,6 +88,10 @@ li a.active {
     transition: transform 0.5s;
 }
 
+.food-card:hover {
+    transform: scale(1.1) translateY(-20px);
+}
+
 .food-card img {
     width: 100%;
     height: 200px;
@@ -107,15 +113,16 @@ li a.active {
     margin-bottom: 5px;
     padding: 9px;
     border: none;
-    background: #ff6b00;
+    background-color: #ff6b00;
     color: white;
     font-size: 14px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 8px;
+    transition: transform 0.5s;
 }
 
-.food-card:hover {
-    transform: scale(1.1) translateY(-25px);
+.food-card button:hover {
+    background: #ff0000;
 }
 
 footer {
